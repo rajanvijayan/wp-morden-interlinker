@@ -24,6 +24,7 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 use WPMordenInterlinker\Admin\SettingsPage;
 use WPMordenInterlinker\Database\Installer;
 use WPMordenInterlinker\Sitemap\UploadHandler;
+use WPMordenInterlinker\Modules\Scheduler;
 
 // Initialize the plugin
 function wp_morden_interlinker_init() {
@@ -32,6 +33,7 @@ function wp_morden_interlinker_init() {
         new SettingsPage();
         new UploadHandler();
     }
+    new Scheduler();
 }
 add_action( 'plugins_loaded', 'wp_morden_interlinker_init' );
 
