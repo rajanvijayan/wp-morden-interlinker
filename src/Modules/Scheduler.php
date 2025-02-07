@@ -70,8 +70,7 @@ class Scheduler {
             ['%s'],
             ['%d']
         );
-
-        error_log("WMI Scheduler: Processed sitemap ID {$sitemap_id} with " . count($urls) . " URLs.");
+        
     }
 
     public static function deactivate() {
