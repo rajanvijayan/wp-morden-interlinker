@@ -24,7 +24,7 @@ class Installer {
                 url TEXT NOT NULL,
                 meta_info TEXT NULL,
                 ai_result LONGTEXT NULL,
-                status ENUM('queued', 'initiated', 'processed', 'completed') NOT NULL DEFAULT 'queued',
+                status ENUM('queued', 'initiated', 'processed', 'completed', 'failed') NOT NULL DEFAULT 'queued',
                 FOREIGN KEY (sitemap_id) REFERENCES {$wpdb->prefix}wmi_sitemap(id) ON DELETE CASCADE
             ) $charset_collate;"
         ];

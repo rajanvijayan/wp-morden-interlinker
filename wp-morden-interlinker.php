@@ -25,6 +25,7 @@ use WPMordenInterlinker\Admin\SettingsPage;
 use WPMordenInterlinker\Database\Installer;
 use WPMordenInterlinker\Sitemap\UploadHandler;
 use WPMordenInterlinker\Modules\Scheduler;
+use WPMordenInterlinker\Modules\Processor;
 
 // Initialize the plugin
 function wp_morden_interlinker_init() {
@@ -34,6 +35,7 @@ function wp_morden_interlinker_init() {
         new UploadHandler();
     }
     new Scheduler();
+    new Processor();
 }
 add_action( 'plugins_loaded', 'wp_morden_interlinker_init' );
 
