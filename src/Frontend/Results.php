@@ -46,7 +46,7 @@ class Results {
 
         ?>
         <div class="wrap">
-            <h1>📌 WMI Sitemap Results</h1>
+            <h1>📌 Sitemap Results</h1>
             <table class="widefat fixed striped wmi-results-table">
                 <thead>
                     <tr>
@@ -54,7 +54,7 @@ class Results {
                         <th>🔗 URL</th>
                         <th>📌 Keyword</th>
                         <th>🔗 Interlinking Opportunities</th>
-                        <th>📊 Status</th>
+                        <th width="100">📊 Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -119,7 +119,7 @@ class Results {
                     </div>
                 </div>
             <?php endif; ?>
-            
+
         </div>
 
             
