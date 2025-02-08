@@ -15,12 +15,15 @@ class UploadHandler {
 
     public function add_upload_page() {
         add_menu_page(
-            __('Sitemap Generator', 'wp-morden-interlinker'),
-            __('Sitemap Generator', 'wp-morden-interlinker'),
+            __('Interlinker', 'wp-morden-interlinker'),
+            __('Interlinker', 'wp-morden-interlinker'),
             'manage_options',
             'wmi-sitemap-generator',
-            [$this, 'render_input_form']
+            [$this, 'render_input_form'],
+            'dashicons-admin-links',
         );
+
+
     }
 
     public function render_input_form() {

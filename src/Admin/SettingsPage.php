@@ -10,7 +10,7 @@ class SettingsPage {
     public function add_settings_page() {
         add_options_page(
             'Interlinker Settings',
-            'Interlinker',
+            'Interlinker API',
             'manage_options',
             'ai-comment-moderator',
             [ $this, 'create_settings_page' ]

@@ -1,0 +1,65 @@
+.wmi-results-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.wmi-results-table th {
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.wmi-results-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+}
+
+.wmi-url {
+    color: #0073aa;
+    font-weight: bold;
+}
+
+.wmi-keyword {
+    font-weight: bold;
+    color: #444;
+}
+
+.wmi-interlinking {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wmi-opportunity-card {
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #007cba;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.wmi-no-opportunities {
+    color: #999;
+}
+
+.wmi-status {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.wmi-status.queued {
+    color: orange;
+}
+
+.wmi-status.processed {
+    color: green;
+}
+
+.wmi-status.failed {
+    color: red;
+}
